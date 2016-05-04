@@ -48,3 +48,4 @@ publish
 .idea
 
 # custom
+/bower_components
