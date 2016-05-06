@@ -1,0 +1,72 @@
+body {
+    height: initial !important;
+    background-color: #F5F5F5;
+}
+
+.image-cropper {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.image-cropper.image-big {
+    width: 120px !important;
+    height: 120px !important;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.pic-profile, .chat-profile {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+md-toolbar > div.md-toolbar-tools > span div.image-big {
+    margin-top: 120px;
+}
+
+md-toolbar {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+.box-shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+div.margin-top {
+    margin-top: 200px;
+}
+
+.md-fab .material-icons {
+    line-height: 56px;
+}
+
+.md-button.md-fab {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 280px;
+    right: 10px;
+}
+
+.medium {
+    font-size: 1.5em;
+}
+
+md-card-title {
+    color: #009688;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
