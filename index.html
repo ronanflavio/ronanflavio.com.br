@@ -39,24 +39,71 @@
                             </md-card-title-text>
                         </md-card-title>
                         <md-card-content>
-                            <div layout="row">
+                            <div layout="row" layout-sm="column" layout-xs="column">
                                 <div flex>
-                                    ...
+                                    <div layout-padding>
+                                        <span class="md-title">Formação e Atuação</span>
+                                        <p>
+                                            Graduado no curso de Sistemas de Informação pela Pontifícia Universidade
+                                            Católica de Minas Gerais, possui experiência e atuação no desenvolvimento
+                                            de sistemas com tecnologias Web e Mobile.
+                                        </p>
+                                        <span class="md-title">Aplicações Servidor</span>
+                                        <p>
+                                            Experiência no desenvolvimento de sistemas de grande porte com a linguagem
+                                            PHP e <em>frameworks</em> MVC (Laravel e CakePHP). Já desenvolveu sistemas
+                                            como camada de serviço para solicitações com padrão REST realizadas de
+                                            clientes multiplataformas.
+                                        </p>
+                                        <span class="md-title">Aplicações Cliente</span>
+                                        <p>
+                                            Utilização do padrão REST para chamada de serviços, com o AngularJS e jQuery
+                                            (AJAX), além da utilização do padrão MVC.
+                                        </p>
+                                        <span class="md-title">Front End</span>
+                                        <p>
+                                            Larga utilização de frameworks e bibliotecas Bootstrap e Material (Angular),
+                                            utilizando, criando e modificando temas responsivos.
+                                        </p>
+                                        <span class="md-title">Aplicações Mobile</span>
+                                        <p>
+                                            Experiência no desenvolvimento de aplicações cross-platform utilizando o
+                                            Cordova para geração da build.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div flex>
-                                    <md-list>
-                                        <div layout="row" ng-repeat="attr in person.attr">
-                                            <md-list-item>
-                                                <div flex>{{attr.key}}:</div>
-                                                <div flex>{{attr.value}}</div>
-                                                <md-divider ng-if="!$last"></md-divider>
-                                            </md-list-item>
-                                        </div>
-                                    </md-list>
+                                    <div layout-padding>
+                                        <span class="md-title">Dados Pessoais</span>
+                                        <md-list>
+                                            <div layout="row" ng-repeat="attr in person.attr">
+                                                <md-list-item>
+                                                    <div flex>{{attr.key}}:</div>
+                                                    <div flex>{{attr.value}}</div>
+                                                    <md-divider ng-if="!$last"></md-divider>
+                                                </md-list-item>
+                                            </div>
+                                        </md-list>
+                                        <span class="md-title">Skills</span>
+                                        <md-chips>
+                                            <md-chip>PHP</md-chip>
+                                            <md-chip>MySQL</md-chip>
+                                            <md-chip>AngularJS</md-chip>
+                                            <md-chip>JavaScript</md-chip>
+                                            <md-chip>jQuery</md-chip>
+                                            <md-chip>AJAX</md-chip>
+                                            <md-chip>HTML</md-chip>
+                                            <md-chip>CSS</md-chip>
+                                            <md-chip>Git</md-chip>
+                                            <md-chip>MVC</md-chip>
+                                            <md-chip>Laravel</md-chip>
+                                        </md-chips>
+                                    </div>
                                 </div>
                             </div>
                         </md-card-content>
-                        <md-card-actions>
+                        <md-card-actions layout="row" layout-align="center center">
+                            ...
                         </md-card-actions>
                     </md-card>
                 </div>
