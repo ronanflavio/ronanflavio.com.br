@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.min.css">
         <link rel="stylesheet" type="text/css" href="bower_components/Ionicons/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendor/material-design-icons/iconfont/material-icons.css">
+        <link rel="stylesheet" type="text/css" href="vendor/jquery-customscroll-master/customscroll.css">
         <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
     </head>
@@ -38,7 +39,7 @@
                                 <h3 class="md-headline">Ronan Flávio</h3>
                             </md-card-title-text>
                         </md-card-title>
-                        <md-card-content>
+                        <md-card-content class="">
                             <div layout="row" layout-sm="column" layout-xs="column">
                                 <div flex>
                                     <div layout-padding>
@@ -51,9 +52,9 @@
                                         <span class="md-title">Aplicações Servidor</span>
                                         <p>
                                             Experiência no desenvolvimento de sistemas de grande porte com a linguagem
-                                            PHP e <em>frameworks</em> MVC (Laravel e CakePHP). Já desenvolveu sistemas
-                                            como camada de serviço para solicitações com padrão REST realizadas de
-                                            clientes multiplataformas.
+                                            PHP e frameworks MVC (Laravel e CakePHP). Já desenvolveu sistemas
+                                            como camada de serviço para solicitações com padrão REST realizadas através
+                                            de clientes multiplataformas.
                                         </p>
                                         <span class="md-title">Aplicações Cliente</span>
                                         <p>
@@ -86,17 +87,7 @@
                                         </md-list>
                                         <span class="md-title">Skills</span>
                                         <md-chips>
-                                            <md-chip>PHP</md-chip>
-                                            <md-chip>MySQL</md-chip>
-                                            <md-chip>AngularJS</md-chip>
-                                            <md-chip>JavaScript</md-chip>
-                                            <md-chip>jQuery</md-chip>
-                                            <md-chip>AJAX</md-chip>
-                                            <md-chip>HTML</md-chip>
-                                            <md-chip>CSS</md-chip>
-                                            <md-chip>Git</md-chip>
-                                            <md-chip>MVC</md-chip>
-                                            <md-chip>Laravel</md-chip>
+                                            <md-chip ng-repeat="skill in person.skills">{{skill}}</md-chip>
                                         </md-chips>
                                     </div>
                                 </div>
@@ -122,18 +113,18 @@
                 ng-mouseleave="isOpen=false">
 
                 <md-fab-trigger>
-                    <md-button class="md-fab md-primary">
+                    <md-button class="md-fab md-primary" aria-label="Compartilhar">
                         <i class="material-icons">share</i>
                     </md-button>
                 </md-fab-trigger>
                 <md-fab-actions>
-                    <md-button class="md-fab md-mini md-primary">
+                    <md-button class="md-fab md-mini md-primary" aria-label="Compartilhar no Facebook">
                         <i class="ion-social-facebook medium"></i>
                     </md-button>
-                    <md-button class="md-fab md-mini md-primary">
+                    <md-button class="md-fab md-mini md-primary" aria-label="Compartilhar no Linkedin">
                         <i class="ion-social-linkedin medium"></i>
                     </md-button>
-                    <md-button class="md-fab md-mini md-primary">
+                    <md-button class="md-fab md-mini md-primary" aria-label="Compartilhar no Twitter">
                         <i class="ion-social-twitter medium"></i>
                     </md-button>
                 </md-fab-actions>
@@ -153,6 +144,7 @@
         <script src="bower_components/angular-route/angular-route.min.js"></script>
         <!-- Personal files -->
         <script src="assets/js/main.js"></script>
+        <script src="vendor/jquery-customscroll-master/jquery.customscroll.js"></script>
         <script src="angular_app/components/app.js"></script>
 
     </body>

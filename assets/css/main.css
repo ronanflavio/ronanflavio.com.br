@@ -70,3 +70,17 @@ md-card-title {
     font-weight: bolder;
     text-transform: uppercase;
 }
+
+.scrollbox {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.scrollbox .wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+    overflow-y: scroll;
+}

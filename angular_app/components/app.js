@@ -30,6 +30,19 @@ app.controller('MainController', ['$scope', function ($scope) {
                 key: 'Localização',
                 value: 'Belo Horizonte, MG - Brasil',
             },
+        ],
+        skills: [
+            'Laravel',
+            'AngularJS',
+            'jQuery',
+            'AJAX',
+            'REST',
+            'JavaScript',
+            'HTML5',
+            'CSS3',
+            'Git',
+            'MVC',
+            'MySQL'
         ]
     }
 }]);
