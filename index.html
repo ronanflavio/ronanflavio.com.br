@@ -86,9 +86,7 @@
                                             </div>
                                         </md-list>
                                         <span class="md-title">Skills</span>
-                                        <md-chips>
-                                            <md-chip ng-repeat="skill in person.skills">{{skill}}</md-chip>
-                                        </md-chips>
+                                        <md-chips ng-model="person.skills" readonly="true"></md-chips>
                                     </div>
                                 </div>
                             </div>
