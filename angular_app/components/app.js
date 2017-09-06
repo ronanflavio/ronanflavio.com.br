@@ -16,7 +16,7 @@ app.controller('MainController', ['$scope', function ($scope) {
             },
             {
                 key: 'Idade',
-                value: '29',
+                value: _calculateAge(new Date('1987-03-12')),
             },
             {
                 key: 'Telefone',
@@ -24,7 +24,7 @@ app.controller('MainController', ['$scope', function ($scope) {
             },
             {
                 key: 'Email',
-                value: 'Ronan Flávio',
+                value: 'ronan@ronanflavio.com.br',
             },
             {
                 key: 'Localização',
@@ -32,17 +32,27 @@ app.controller('MainController', ['$scope', function ($scope) {
             },
         ],
         skills: [
+            'PHP',
             'Laravel',
+            'Yii2',
             'AngularJS',
             'jQuery',
             'AJAX',
             'REST',
+            'API',
             'JavaScript',
             'HTML5',
             'CSS3',
             'Git',
             'MVC',
-            'MySQL'
+            'MySQL',
+            'Oracle',
         ]
     }
 }]);
+
+function _calculateAge(birthday) { // birthday is a date
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    return Math.abs(ageDate.getUTCFullYear() - 1970);
+}
