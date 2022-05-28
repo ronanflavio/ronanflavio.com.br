@@ -1,0 +1,11 @@
+<div class="container ronan-center-content">
+  <div #chartContainer>
+    <ngx-charts-bar-horizontal
+      [view]="[chartContainer.offsetWidth, chartContainer.offsetHeight]"
+      [results]="skills"
+      [yAxis]="true"
+      [showDataLabel]="true"
+      [customColors]="customColors"
+    ></ngx-charts-bar-horizontal>
+  </div>
+</div>

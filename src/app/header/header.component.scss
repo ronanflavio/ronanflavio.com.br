@@ -1,0 +1,58 @@
+.ronan-header {
+  background: #FF9064;
+
+  .ronan-brand,
+  .ronan-brand-mobile {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -3px;
+  }
+
+  .ronan-brand-mobile {
+    display: none;
+  }
+
+  @media(max-width: 800px) {
+    .ronan-brand {
+      display: none;
+    }
+
+    .ronan-brand-mobile {
+      display: block;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      margin: 0 8px;
+
+      a {
+        color: #fff;
+
+        &::before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: #fff;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+
+        &:hover::before,
+        &.active::before {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
